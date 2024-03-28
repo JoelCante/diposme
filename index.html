@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fabricación y distribución de 
+    postes metálicos econ base en Mérida, México">
+    <meta name="theme-color" content="#F2AB01">
+    <link rel="icon" href="imagenes/dpm.png" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://kit.fontawesome.com/2ee0245f3d.js"></script>
+    <title>DIPOSME CC - distribuidora</title>
+</head>
+<body id="body">
+    <div class="cinta-redes-sociales" id="inicio">
+     <div  class="ancho contenedor-redes">
+        <ul class="redes-sociales">
+            <li><a href="https://www.facebook.com/diposmecc"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/diposmecc"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+     </div>
+    </div>
+    <header>
+        <nav class="ancho menu">
+            <figure class="logo">
+               <a href="#"><img src="imagenes/logo.webp" alt=""></a>
+            </figure>
+            <div class="menu-movil" id="menu-movil">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Catalogo y Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <a class="boton-menu" id="boton-menu" onclick="menu()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <section class="cabecera">
+     <figure class="contenedor-izq">
+        <div class="titulo-principal">
+            <h1>Fabricación y distribución de 
+                postes metálicos</h1>
+            <a class="boton-amarillo" href="#" aria-label="boton-contactanos">Contáctanos</a>
+        </div>
+     </figure>
+     <figure class="contenedor-der"></figure>
+      <div class="modal">
+            <a href="https://api.whatsapp.com/send/?phone=529991848615" class="boton-modal whatsapp">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+             </a>
+        <a href="tel:9991848615" class="boton-flotante"">
+            <i id="icono" class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+    <div class="imagen-nosotros">
+    </div>
+    <div class="contenedor-descripcion">
+      <div class="descripcion">
+       <h2>Somos distribuidora <span class="amarillo">DIPOSME CC</span> con base en Mérida, Yucatán</h2>
+       <p>Nos dedicamos a ofrecer productos excepcionales y servicios superiores a nuestros clientes. Con nuestro trabajo hemos 
+        establecido una reputación sólida por nuestra calidad, confiabilidad y atención al 
+        cliente.</p>
+        <p>Nuestro compromiso con la satisfacción del cliente es inquebrantable. 
+            Trabajamos estrechamente con cada cliente para entender sus necesidades específicas y proporcionar 
+            soluciones personalizadas que se ajusten a sus requisitos y presupuesto.</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+       <div class="ancho titulo">
+        <h2>Productos y Servicios</h2>
+       </div>
+
+       <article class="contenedor-productos">
+        <div class="contenedor-imagen">
+            <figure class="imagen-poste" id="poste-cuadrado"></figure>
+        </div>
+          <article class="contenedor-descripcion">
+            <div class="descripcion-producto" id="descripcion">
+                <h3>Poste <span class="amarillo">Recto cuadrado</span></h3>
+                <h4>Especificaciones:</h4>
+                <p>Poste recto cuadrado con acabado en esmalte color negro. Puede llevar
+                 1 o 2 brazos en angulo o de tipo gasolinera de 1.20m</p>
+                 <h4>Canasta con ancla</h4>
+                 <p>75cm de alto con cabilla de 3/4" con crucetas de 3/8"</p>
+                 
+            </div>
+            <button class="boton-mas" id="abrir" aria-label="boton ver mas"><i class="fa-solid fa-plus"></i></button>
+            
+            <div class="modal-medida" id="medidas">
+                <h4>Medidas poste <span class="amarillo">Recto cuadrado</span></h4>
+                <table class="medidas">
+                    <tr>
+                        <th>Altura Postes</th>
+                        <th>Placa Base</th>
+                        <th>Medida de barreno</th>
+                        <th>Espesor de placa</th>
+                </tr>
+        
+                <tr> 
+                      <td>4m</td>
+                      <td>30x30cm</td> 
+                      <td>1 1/4"</td>
+                      <td>3/8"</td>
+                </tr>
+                <tr>  
+                    <td>5m</td>        
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                 <tr>
+                    <td>6m</td>
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                  </table>
+        
+                  <p>*Todas las medidas son estándar. Si buscas una medida específica o algún modelo, cotiza sin compromiso.</p>
+                  <button class="boton-cerrar" id="cerrar" aria-label="boton cerrar"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+          </article>
+       </article>
+
+       <article class="contenedor-productos reversa">
+          <article class="contenedor-descripcion">
+            <div class="descripcion-producto" id="descripcion-dos">
+                <h3>Poste <span class="amarillo">recto circular</span></h3>
+                <h4>Especificaciones:</h4>
+                <p>Poste recto circular con acabado en esmalte aluminio con brazo de 1.50m por 1.5" de diametro</p>
+                <h4>Canasta con ancla</h4>
+                <p>75cm de alto con cabilla de 3/4" con crucetas de 3/8"</p>
+            </div>
+
+            <button class="boton-mas" id="abrir-dos" aria-label="boton ver mas"><i class="fa-solid fa-plus"></i></button>
+
+            <div class="modal-medida" id="medidas-dos">
+                <h4>Medidas poste <span class="amarillo">Recto circular</span></h4>
+                <table class="medidas">
+                    <tr>
+                        <th>Altura Postes</th>
+                        <th>Placa Base</th>
+                        <th>Medida de barreno</th>
+                        <th>Espesor de placa</th>
+                </tr>
+        
+                <tr> 
+                      <td>4m</td>
+                      <td>30x30cm</td> 
+                      <td>1 1/4"</td>
+                      <td>3/8"</td>
+                </tr>
+                <tr>  
+                    <td>5m</td>        
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                 <tr>
+                    <td>6m</td>
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                 <tr>
+                    <td>7m</td>
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                  </table>
+        
+                  <p>*Todas las medidas son estándar. Si buscas una medida específica o algún modelo, cotiza sin compromiso.</p>
+                  <button class="boton-cerrar" id="cerrar-dos" aria-label="boton cerrar"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+          </article>
+          <div class="contenedor-imagen">
+            <figure class="imagen-poste" id="poste-redondo"></figure>
+        </div>
+       </article>
+
+       <article class="contenedor-productos">
+        <div class="contenedor-imagen">
+            <figure class="imagen-poste" id="poste-redondo-d"></figure>
+        </div>
+          <article class="contenedor-descripcion">
+            <div class="descripcion-producto" id="descripcion-tres">
+                <h3>Poste <span class="amarillo">Recto circular doble</span></h3>
+                <h4>Especificaciones:</h4>
+                <p>Poste recto circular con acabado en esmalte aluminio con 2 brazos de 1.50m por 1.5" de diametro</p>
+                <h4>Canasta con ancla</h4>
+                <p>75cm de alto con cabilla de 3/4" con crucetas de 3/8"</p>
+            </div>
+            <button class="boton-mas" id="abrir-tres" aria-label="boton ver mas"><i class="fa-solid fa-plus"></i></button>
+            <div class="modal-medida" id="medidas-tres">
+                <h4>Medidas poste <span class="amarillo">Recto circular doble</span></h4>
+                <table class="medidas">
+                    <tr>
+                        <th>Altura Postes</th>
+                        <th>Placa Base</th>
+                        <th>Medida de barreno</th>
+                        <th>Espesor de placa</th>
+                </tr>
+        
+                <tr> 
+                      <td>4m</td>
+                      <td>30x30cm</td> 
+                      <td>1 1/4"</td>
+                      <td>3/8"</td>
+                </tr>
+                <tr>  
+                    <td>5m</td>        
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                 <tr>
+                    <td>6m</td>
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                 <tr>
+                    <td>7m</td>
+                    <td>30x30cm</td>
+                    <td>1 1/4"</td>
+                    <td>3/8"</td>
+                 </tr>
+                  </table>
+        
+                  <p>*Todas las medidas son estándar. Si buscas una medida específica o algún modelo, cotiza sin compromiso.</p>
+                  <button class="boton-cerrar" id="cerrar-tres" aria-label="boton cerrar"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+          </article>
+       </article>
+
+       <article class="contenedor-productos reversa">
+        <article class="contenedor-descripcion">
+          <div class="descripcion-producto" id="descripcion-cuatro">
+              <h3>Brazo para <span class="amarillo">Poste de concreto</span></h3>
+              <h4>Especificaciones:</h4>
+              <p>Tubo de acero galvanizado conduit para poste de concreto en acabado esmalte aluminio o galvanizado en inmersión caliente</p>
+              <h4>Uso</h4>
+              <p>Soporte de iluminación para alumbrado público en postes de concreto</p>
+          </div>
+
+          <button class="boton-mas" id="abrir-cuatro" aria-label="boton ver mas"><i class="fa-solid fa-plus"></i></button>
+
+          <div class="modal-medida" id="medidas-cuatro">
+            <h4>Medidas brazo para <span class="amarillo">poste de concreto</span></h4>
+            <table class="medidas">
+                <tr>
+                    <th>Medidas de Largo</th>
+                    <th>Medidas de diametro</th>
+            </tr>
+    
+            <tr> 
+                  <td>1.00 m</td>
+                  <td>32 mm</td> 
+            </tr>
+            <tr>  
+                <td>1.20 m</td>        
+                <td>36mm</td>
+             </tr>
+             <tr>
+                <td>1.50 m</td>
+                <td>50mm</td>
+             </tr>
+             <tr>
+                <td>1.80 m</td>
+             </tr>
+              </table>
+                <p>*Todas las medidas son estándar. Si buscas una medida específica o algún modelo, cotiza sin compromiso.</p>
+                <button class="boton-cerrar" id="cerrar-cuatro" aria-label="boton cerrar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </article>
+        <div class="contenedor-imagen">
+          <figure class="imagen-poste" id="brazo-poste-con"></figure>
+      </div>
+     </article>
+
+
+     <article class="contenedor-productos">
+        <div class="contenedor-imagen">
+            <figure class="imagen-poste" id="brazo-poste-met"></figure>
+        </div>
+          <article class="contenedor-descripcion">
+            <div class="descripcion-producto" id="descripcion-cinco">
+                <h3>Brazo para <span class="amarillo">Poste de metal</span></h3>
+              <h4>Especificaciones:</h4>
+              <p>Tubo de acero galvanizado conduit con contra percha para poste de metal, en acabado esmalte aluminio o galvanizado en inmersión caliente</p>
+              <h4>Uso</h4>
+              <p>Soporte de iluminación para alumbrado público en postes metalicos con percha, en redes aereas.</p>
+            </div>
+            <button class="boton-mas" id="abrir-cinco" aria-label="boton ver mas"><i class="fa-solid fa-plus"></i></button>
+            <div class="modal-medida" id="medidas-cinco">
+                <h4>Medidas brazo para <span class="amarillo">poste de metal</span></h4>
+                <table class="medidas">
+                    <tr>
+                        <th>Medidas de Largo</th>
+                        <th>Medidas de diametro</th>
+                </tr>
+        
+                <tr> 
+                      <td>1.00 m</td>
+                      <td>32 mm</td> 
+                </tr>
+                <tr>  
+                    <td>1.20 m</td>        
+                    <td>36mm</td>
+                 </tr>
+                 <tr>
+                    <td>1.50 m</td>
+                    <td>50mm</td>
+                 </tr>
+                 <tr>
+                    <td>1.80 m</td>
+                 </tr>
+                  </table>
+        
+                  <p>*Todas las medidas son estándar. Si buscas una medida específica o algún modelo, cotiza sin compromiso.</p>
+                  <button class="boton-cerrar" id="cerrar-cinco" aria-label="boton cerrar"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+          </article>
+       </article>
+
+    </section>
+
+    <section class="galeria">
+       <div class="contenedor-galeria">
+        <figure class="imagen"><img src="imagenes/imagen-1.webp" alt=""></figure>
+        <figure class="imagen"><img src="imagenes/imagen-2.webp" alt=""></figure>
+        <figure class="imagen"><img src="imagenes/imagen-3.webp" alt=""></figure>
+        <figure class="imagen"><img src="imagenes/imagen-4.webp" alt=""></figure>
+        <figure class="imagen"><img src="imagenes/imagen-5.webp" alt=""></figure>
+        <figure class="imagen"><img src="imagenes/imagen-6.webp" alt=""></figure>
+       </div>
+    </section>
+
+    <section class="contactanos" id="contacto">
+     <div class="ancho contenedor-formulario">
+        <div class="formulario">
+            <div class="titulo">
+                <h2>Contáctanos</h2>
+                <br>
+                <p>Enviénos un mensaje para cotizar un servicio o producto</p>
+               </div>
+
+            <form class="form" action="" method="post">
+                  <div class="contenedor-entrada">
+                    <div class="campo">
+                        <label for="nombre">Nombre*</label>
+                        <input class="entrada" type="text" id="nombre" name="name" placeholder="Nombre(s) Apellido(s)" required />
+                      </div>
+                      <div class="campo">
+                        <label for="correo">Correo electrónico*</label>
+                        <input class="entrada" type="email" id="correo" name="mail" placeholder="usuario@correo.com" required/>
+                      </div>
+                  </div>
+                    <div class="contenedor-entrada">
+                        <div class="campo">
+                            <label for="telefono">Teléfono*</label>
+                            <input class="entrada" type="tel" id="telefono" name="phone" placeholder="000 000 0000" required/>
+                          </div>
+    
+                          <div class="campo">
+                            <label for="servicio">Seleccione un servicio*</label>
+                            <select class="entrada" name="opciones" id="servicio" name="service">
+                                <option value="poste-cuadrado" required>Poste-cuadrado</option>
+                                <option value="poste-redondo"  required>Poste redondo</option>
+                                <option value="poste-r-doble" required>Poste redondo doble</option>
+                                <option value="otro">Otro servicio</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div>
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea id="mensaje" name="message" placeholder="Describa el servicio aquí"></textarea>
+                    </div>
+                    <br>
+                    <p>*Obligatorio llenar el campo</p>
+                    <br>
+                    <input class="boton-cafe" type="submit" value="Enviar"  aria-label="boton enviar"/>
+                  </ul>
+             
+          </form>
+        </div>
+        <div class="vector">
+            <figure class="figura-vector">
+                <svg width="436" height="450" viewBox="0 0 498 514" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.7822 86.4158C68.0955 13.5228 201.077 2.49201 214.952 1.23899C352.509 -11.1644 498.823 72.0555 497.936 139.211C497.429 177.689 448.921 186.185 444.436 240.579C440.361 290.087 478.725 305.151 479.633 358.137C480.767 423.871 422.938 472.014 418.391 475.695C347.074 533.418 236.774 516.812 185.386 481.327C176.467 475.167 165.634 465.882 145.965 458.097C102.736 440.977 83.3499 457.393 55.1571 444.722C19.8474 428.806 -2.6435 380.902 0.249694 341.946C3.55822 297.387 37.629 294.698 53.7492 245.506C76.4513 176.218 22.7758 138.986 41.7822 86.4158Z" fill="#FFEBBC"/>
+                    <path d="M262.82 89.2316C269.901 103.592 253.176 129.877 235.014 128.652C224.272 127.948 212.298 117.53 212.136 104.014C211.974 90.3156 224.025 80.8547 235.014 78.6725C245.496 76.5958 258.49 80.4464 262.82 89.2316Z" fill="#E8BE8B"/>
+                    <path d="M209.032 391.447L158.77 398.078L158.855 398.55C157.863 397.991 157.054 397.157 156.525 396.15C155.854 394.599 155.611 392.898 155.821 391.222C156.426 386.9 160.192 384.281 161.452 383.479C168.748 382.397 175.857 380.298 182.57 377.242C182.711 375.834 182.85 374.438 182.986 373.053C183.084 372.096 183.183 371.139 183.274 370.181L207.208 369.4C207.11 369.949 207.018 370.568 206.941 371.237C206.62 374.023 206.71 376.841 207.208 379.6C207.448 380.902 207.525 380.825 207.912 382.733C208.553 385.907 209.193 389.11 209.032 391.447Z" fill="#493838"/>
+                    <path d="M226.869 127.976L224.807 141.985L230.305 156.81H242.666L252.964 145.279L246.101 137.86L244.728 127.153L240.603 118.093L228.242 121.387L226.869 127.976Z" fill="#E0B586"/>
+                    <path d="M272.675 199.75L206.504 199.046C205.329 195.055 204.16 184.031 202.985 180.04C201 183.06 197.839 194.267 193.129 198.342C187.273 203.411 181.824 208.127 174.827 208.198C168.309 208.261 162.973 203.784 152.301 194.823C148.611 191.725 145.086 188.435 141.742 184.968C145.268 183.315 148.391 180.913 150.893 177.928C152.658 175.815 154.083 173.44 155.117 170.889L172.715 180.744C179.126 167.672 187.694 155.773 198.057 145.547C201.636 143.337 205.405 141.452 209.32 139.915C210.256 139.549 211.186 139.211 212.094 138.902C214.653 138.013 217.262 137.275 219.907 136.691C221.921 136.248 223.8 135.931 225.539 135.692C225.891 138.165 227.145 140.421 229.059 142.027C230.362 143.224 231.952 144.064 233.675 144.467C235.398 144.87 237.196 144.821 238.895 144.325C240.594 143.83 242.136 142.905 243.372 141.639C244.609 140.373 245.498 138.809 245.953 137.1C249.207 137.011 252.462 137.206 255.682 137.684C257.09 137.888 258.497 138.162 260.032 138.507L263.284 139.254C260.877 146.117 251.972 174.451 267.071 194.119C268.625 196.284 270.517 198.185 272.675 199.75Z" fill="#6C779E"/>
+                    <path d="M300.656 391.286C291.167 397.002 272.597 400.296 271.971 399.669C270.303 397.656 270.387 394.805 270.563 389.11C270.669 385.717 270.725 383.648 271.661 381.367C271.753 381.142 271.858 380.909 271.971 380.663C273.466 377.597 275.944 375.119 279.01 373.624C280.122 373.103 284.761 370.928 289.302 372.92C289.629 373.061 289.944 373.228 290.245 373.42C291.203 374.032 292.624 375.236 294.469 377.847C297.651 382.24 300.98 386.879 300.656 391.286Z" fill="#493838"/>
+                    <path d="M266.276 99.9244C265.436 104.109 263.783 108.089 261.412 111.638C261.121 112.091 260.671 112.42 260.15 112.558C259.629 112.695 259.076 112.633 258.599 112.383C258.121 112.133 257.755 111.713 257.572 111.207C257.389 110.7 257.403 110.143 257.61 109.646C257.794 109.196 258.102 108.808 258.497 108.527C260.447 107.119 263.348 104.465 264.235 100.495C264.284 100.276 264.354 99.9596 264.418 99.5795C264.671 98.1716 264.861 95.8415 263.531 94.863C262.997 94.5499 262.389 94.3849 261.771 94.3849C261.152 94.3849 260.545 94.5499 260.011 94.863C258.716 95.567 258.153 96.9749 257.822 98.3827C257.364 100.389 257.399 102.437 256.491 102.606C255.449 102.825 253.795 100.459 252.584 97.3972C252.168 96.3426 251.825 95.2607 251.557 94.1591C251.405 93.5303 251.29 92.8934 251.212 92.2514C250.958 90.1396 251.374 89.3793 250.853 87.8236C248.508 80.8194 234.507 79.6086 231.846 79.3763C226.067 78.8949 220.25 79.6139 214.762 81.4882C214.304 81.6412 213.808 81.6371 213.353 81.4764C212.897 81.3157 212.509 81.0077 212.249 80.6012C212.189 80.5097 212.099 80.4424 211.995 80.4115C211.89 80.3805 211.778 80.3879 211.678 80.4323L207.131 82.5863C207.057 82.6205 206.976 82.6345 206.895 82.6269C206.815 82.6193 206.737 82.5904 206.671 82.5431C206.605 82.4959 206.553 82.4319 206.52 82.3579C206.487 82.2838 206.474 82.2023 206.483 82.1217C206.842 79.665 209.947 73.1746 211.58 72.0342C211.629 71.999 211.671 71.9539 211.702 71.9017C211.733 71.8494 211.753 71.7913 211.76 71.7311C211.767 71.6708 211.762 71.6096 211.744 71.5515C211.726 71.4934 211.697 71.4397 211.657 71.3937L207.912 66.8462C207.865 66.7769 207.838 66.6959 207.834 66.6121C207.831 66.5284 207.85 66.4453 207.891 66.3721C207.932 66.299 207.993 66.2387 208.066 66.1981C208.139 66.1575 208.223 66.1381 208.306 66.1423C211.404 66.459 219.886 67.3178 219.886 66.7336C219.886 61.806 250.86 52.0282 264.938 74.4769C266.966 77.2504 266.234 85.036 266.734 92.7794C266.734 92.8216 266.734 92.8639 266.734 92.9061C266.874 95.2554 266.72 97.6131 266.276 99.9244Z" fill="#303030"/>
+                    <path d="M291.681 372.216C286.05 377.686 269.155 382.071 269.155 382.071C264.375 374.081 254.555 351.351 250.149 340.722C246.464 331.826 243.406 322.683 240.997 313.359C239.308 303.119 237.665 292.795 236.07 282.386C234.85 274.436 233.676 266.533 232.55 258.677L212.136 299.414C212.256 309.27 212.051 319.596 211.432 330.388C210.601 344.861 209.109 358.468 207.208 371.125C203.651 372.764 199.844 373.792 195.945 374.166C191.448 374.594 186.911 374.171 182.57 372.92C176.999 344.892 176.048 316.141 179.755 287.806C180.262 277.466 182.156 267.24 185.386 257.403C191.546 238.594 199.021 231.942 202.985 216.061C204.949 208.184 206.54 196.111 202.985 180.16C202.985 180.16 210.58 170.621 212.094 138.55C214.664 137.783 217.272 137.146 219.907 136.642C219.964 140.401 219.957 145.667 219.907 149.151C219.795 153.999 219.56 158.661 219.203 163.138C223.741 164.678 228.491 165.498 233.282 165.567C241.321 165.666 250.254 163.561 250.177 163.16C249.529 162.596 254.802 141.105 255.682 137.522C257.09 137.698 258.497 137.937 260.032 138.226C261.137 138.444 262.214 138.691 263.249 138.93C260.785 145.012 252.049 169.34 267.071 186.228C269.15 188.546 271.515 190.59 274.111 192.31C273.073 197.55 272.402 202.857 272.105 208.191C272.055 209.021 272.027 209.803 271.999 210.549C271.724 218.813 272.337 228.183 272.59 231.667C272.661 232.533 272.703 233.033 272.703 233.075C276.761 247.312 277.484 262.292 274.815 276.853C274.651 279.941 274.543 283.106 274.491 286.349C274.399 292.34 274.526 298.098 274.815 303.603C277.778 310.98 280.629 318.892 283.262 327.312C286.93 339.187 289.661 361.833 291.681 372.216Z" fill="#28272D"/>
+                    <path d="M304.352 219.461C301.459 226.5 296.215 230.724 293.089 232.835L272.562 246.717C272.309 242.698 271.696 231.85 271.971 222.276C271.971 221.418 272.027 220.509 272.076 219.552L280.418 211.717L274.083 201.158C271.444 199.123 269.078 196.757 267.043 194.119C252.021 174.57 260.757 146.399 263.221 139.359C268.744 140.999 273.985 143.47 278.764 146.687C280.265 147.693 281.559 148.978 282.572 150.474C289.041 160.048 300.755 179.097 305.056 199.046C306.753 206.923 306.922 213.217 304.352 219.461Z" fill="#6C779E"/>
+                    <path d="M272.562 246.717L269.155 249.026C268.74 245.606 267.409 242.362 265.303 239.636C263.196 236.91 260.393 234.804 257.188 233.539L272.076 219.552C272.027 220.509 271.999 221.417 271.971 222.276C271.696 231.85 272.309 242.691 272.562 246.717Z" fill="#6C779E"/>
+                    <path d="M114.992 138.507L105.841 124.429L94.5778 123.021L86.8344 126.54" stroke="#2E3192" stroke-width="5" stroke-miterlimit="10"/>
+                    <path d="M119.599 134.922C117.85 131.892 113.975 130.853 110.945 132.603C107.915 134.352 106.876 138.227 108.626 141.257L116.017 154.059C117.767 157.09 121.641 158.128 124.672 156.378C127.702 154.629 128.74 150.754 126.991 147.724L119.599 134.922Z" fill="#969FC6"/>
+                    <path d="M141.495 184.869C141.495 184.869 147.528 187.079 155.821 170.889L134.702 159.105C134.702 159.105 130.183 137.754 113.584 147.328C113.584 147.328 106.045 167.946 125.65 167.946L141.495 184.869Z" fill="#F2AB01"/>
+                    <path d="M239.815 75.1528H221.766C214.892 75.1528 209.32 80.725 209.32 87.5985V116.911C209.32 123.784 214.892 129.356 221.766 129.356H239.815C246.688 129.356 252.261 123.784 252.261 116.911V87.5985C252.261 80.725 246.688 75.1528 239.815 75.1528Z" fill="#95A1C0"/>
+                    <path d="M237.126 86.4158H219.527C215.445 86.4158 212.136 89.725 212.136 93.8071C212.136 97.8893 215.445 101.199 219.527 101.199H237.126C241.208 101.199 244.517 97.8893 244.517 93.8071C244.517 89.725 241.208 86.4158 237.126 86.4158Z" fill="#AAD5F0" stroke="#2E3192" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M414.005 339.834H335.192C333.046 339.834 331.306 341.574 331.306 343.72V437.316C331.306 439.462 333.046 441.202 335.192 441.202H414.005C416.151 441.202 417.891 439.462 417.891 437.316V343.72C417.891 341.574 416.151 339.834 414.005 339.834Z" fill="#28272D"/>
+                    <path d="M345.737 452.113C349.625 452.113 352.776 449.182 352.776 445.566C352.776 441.951 349.625 439.02 345.737 439.02C341.849 439.02 338.697 441.951 338.697 445.566C338.697 449.182 341.849 452.113 345.737 452.113Z" fill="#1E1E1E"/>
+                    <path d="M403.46 452.113C407.348 452.113 410.499 449.182 410.499 445.566C410.499 441.951 407.348 439.02 403.46 439.02C399.572 439.02 396.421 441.951 396.421 445.566C396.421 449.182 399.572 452.113 403.46 452.113Z" fill="#1E1E1E"/>
+                    <path d="M408.789 349.69H340.408C338.88 349.69 337.642 350.928 337.642 352.456V438.548C337.642 440.076 338.88 441.315 340.408 441.315H408.789C410.317 441.315 411.555 440.076 411.555 438.548V352.456C411.555 350.928 410.317 349.69 408.789 349.69Z" fill="#F2AB01"/>
+                    <path d="M417.891 443.933H331.306C330.994 443.951 330.683 443.904 330.39 443.797C330.097 443.689 329.829 443.523 329.602 443.309C329.375 443.095 329.195 442.836 329.071 442.549C328.948 442.263 328.884 441.954 328.884 441.642C328.884 441.33 328.948 441.021 329.071 440.735C329.195 440.448 329.375 440.189 329.602 439.975C329.829 439.761 330.097 439.595 330.39 439.487C330.683 439.38 330.994 439.333 331.306 439.351H417.891C418.202 439.333 418.514 439.38 418.807 439.487C419.1 439.595 419.368 439.761 419.595 439.975C419.822 440.189 420.002 440.448 420.126 440.735C420.249 441.021 420.313 441.33 420.313 441.642C420.313 441.954 420.249 442.263 420.126 442.549C420.002 442.836 419.822 443.095 419.595 443.309C419.368 443.523 419.1 443.689 418.807 443.797C418.514 443.904 418.202 443.951 417.891 443.933Z" fill="#C3343D"/>
+                    <path d="M365.278 429.939C367.611 429.939 369.502 428.048 369.502 425.715C369.502 423.383 367.611 421.492 365.278 421.492C362.946 421.492 361.055 423.383 361.055 425.715C361.055 428.048 362.946 429.939 365.278 429.939Z" fill="#1E1E1E"/>
+                    <path d="M375.626 429.939C377.959 429.939 379.85 428.048 379.85 425.715C379.85 423.383 377.959 421.492 375.626 421.492C373.294 421.492 371.403 423.383 371.403 425.715C371.403 428.048 373.294 429.939 375.626 429.939Z" fill="#1E1E1E"/>
+                    <path d="M385.974 429.939C388.307 429.939 390.198 428.048 390.198 425.715C390.198 423.383 388.307 421.492 385.974 421.492C383.641 421.492 381.75 423.383 381.75 425.715C381.75 428.048 383.641 429.939 385.974 429.939Z" fill="#1E1E1E"/>
+                    <path d="M355.888 401.781H395.308" stroke="#2E3192" stroke-miterlimit="10"/>
+                    <path d="M355.888 410.933H395.308" stroke="#2E3192" stroke-miterlimit="10"/>
+                    <path d="M355.888 406.709H395.308" stroke="#2E3192" stroke-miterlimit="10"/>
+                    <path d="M400.778 355.321H348.419C346.938 355.321 345.737 356.522 345.737 358.003V393.468C345.737 394.949 346.938 396.15 348.419 396.15H400.778C402.259 396.15 403.46 394.949 403.46 393.468V358.003C403.46 356.522 402.259 355.321 400.778 355.321Z" fill="#E8CB97"/>
+                    <path d="M361.217 364.247C361.219 364.645 361.11 365.035 360.9 365.373C360.691 365.71 360.391 365.983 360.034 366.157C359.677 366.332 359.278 366.403 358.883 366.361C358.488 366.319 358.112 366.167 357.8 365.921C357.487 365.676 357.251 365.347 357.117 364.973C356.983 364.599 356.957 364.194 357.042 363.806C357.128 363.418 357.321 363.062 357.6 362.779C357.879 362.496 358.232 362.297 358.619 362.206C358.925 362.14 359.242 362.14 359.548 362.206C360.017 362.306 360.437 362.563 360.74 362.934C361.043 363.305 361.211 363.768 361.217 364.247Z" fill="#C3343D"/>
+                    <path d="M359.576 362.192C359.27 362.126 358.953 362.126 358.647 362.192L359.105 360.819L359.576 362.192Z" fill="#281819"/>
+                    <path d="M371.536 364.247C371.539 364.645 371.43 365.035 371.22 365.374C371.011 365.712 370.711 365.984 370.353 366.159C369.996 366.334 369.597 366.405 369.201 366.363C368.805 366.32 368.43 366.167 368.117 365.921C367.805 365.675 367.568 365.346 367.435 364.971C367.302 364.596 367.277 364.191 367.363 363.803C367.45 363.415 367.644 363.059 367.924 362.776C368.204 362.494 368.558 362.296 368.946 362.206C369.107 362.168 369.273 362.15 369.439 362.149C369.585 362.149 369.731 362.163 369.875 362.192C370.344 362.294 370.765 362.554 371.067 362.927C371.369 363.301 371.535 363.767 371.536 364.247Z" fill="#C3343D"/>
+                    <path d="M369.903 362.192C369.597 362.126 369.28 362.126 368.974 362.192L369.432 360.819L369.903 362.192Z" fill="#281819"/>
+                    <path d="M381.863 364.247C381.866 364.645 381.756 365.035 381.547 365.373C381.338 365.71 381.037 365.983 380.681 366.157C380.324 366.332 379.925 366.403 379.529 366.361C379.134 366.319 378.759 366.167 378.446 365.921C378.134 365.676 377.897 365.347 377.763 364.973C377.629 364.599 377.603 364.194 377.689 363.806C377.775 363.418 377.968 363.062 378.247 362.779C378.526 362.496 378.879 362.297 379.266 362.206C379.427 362.169 379.593 362.15 379.758 362.149C379.905 362.148 380.051 362.163 380.195 362.192C380.665 362.293 381.088 362.552 381.391 362.926C381.694 363.299 381.861 363.766 381.863 364.247Z" fill="#C3343D"/>
+                    <path d="M380.223 362.192C380.079 362.162 379.933 362.148 379.786 362.149C379.621 362.15 379.455 362.169 379.294 362.206L379.751 360.833L380.223 362.192Z" fill="#281819"/>
+                    <path d="M392.19 364.247C392.193 364.645 392.083 365.035 391.874 365.373C391.665 365.71 391.364 365.983 391.007 366.157C390.651 366.332 390.252 366.403 389.856 366.361C389.461 366.319 389.086 366.167 388.773 365.921C388.461 365.676 388.224 365.347 388.09 364.973C387.956 364.599 387.93 364.194 388.016 363.806C388.101 363.418 388.295 363.062 388.574 362.779C388.853 362.496 389.206 362.297 389.592 362.206C389.899 362.14 390.215 362.14 390.522 362.206C390.99 362.306 391.41 362.563 391.713 362.934C392.017 363.305 392.185 363.768 392.19 364.247Z" fill="#C3343D"/>
+                    <path d="M390.55 362.192C390.244 362.126 389.927 362.126 389.621 362.192L390.078 360.819L390.55 362.192Z" fill="#281819"/>
+                    <path d="M378.47 386.499C378.47 387.255 378.257 387.996 377.856 388.636C377.454 389.277 376.88 389.791 376.199 390.12C375.518 390.449 374.758 390.579 374.007 390.495C373.255 390.412 372.543 390.118 371.951 389.648C371.359 389.178 370.911 388.55 370.66 387.837C370.408 387.124 370.363 386.354 370.529 385.617C370.696 384.879 371.067 384.203 371.6 383.667C372.133 383.131 372.806 382.756 373.543 382.585C373.852 382.511 374.168 382.474 374.486 382.472C374.767 382.471 375.048 382.5 375.324 382.557C376.218 382.758 377.017 383.259 377.589 383.975C378.161 384.692 378.472 385.582 378.47 386.499Z" fill="#C3343D"/>
+                    <path d="M375.338 382.557C375.064 382.499 374.786 382.471 374.507 382.472C374.189 382.473 373.873 382.511 373.564 382.585L374.437 379.959L375.338 382.557Z" fill="#281819"/>
+                    <path d="M366.316 382.555L366.134 383.235L367.657 383.642L367.839 382.962L366.316 382.555Z" fill="#968672"/>
+                    <path d="M367.094 386.999H365.518V387.703H367.094V386.999Z" fill="#968672"/>
+                    <path d="M374.394 377.411H373.69V378.988H374.394V377.411Z" fill="#968672"/>
+                    <path d="M369.515 378.8L369.018 379.298L370.133 380.413L370.63 379.915L369.515 378.8Z" fill="#968672"/>
+                    <path d="M384.718 383.725L383.188 384.135L383.371 384.818L384.901 384.408L384.718 383.725Z" fill="#968672"/>
+                    <path d="M382.849 386.999H381.272V387.702H382.849V386.999Z" fill="#968672"/>
+                    <path d="M378.843 378.804L377.728 379.919L378.226 380.417L379.341 379.302L378.843 378.804Z" fill="#968672"/>
+                    <path d="M247.805 492.013C238.583 492.013 228.629 490.196 219.52 484.748C215.916 482.594 206.357 476.878 207.215 470.669C208.032 464.791 217.915 460.307 231.804 459.505C233.9 459.46 235.988 459.224 238.041 458.801C244.794 457.331 250.999 453.995 255.949 449.171C261.151 441.737 257.09 432.628 251.479 420.042C245.144 405.808 236.457 386.323 237.478 359.503C238.238 339.462 243.947 326.692 248.53 316.429C253.633 305.018 257.315 296.768 252.31 284.477C243.159 262 209.989 240.516 184.492 233.497L183.704 233.286C178.903 231.977 171.652 230.006 163.853 224.233C154.793 217.546 150.682 208.571 143.213 192.289C139.516 184.035 135.358 175.995 130.76 168.207C129.397 165.973 128.149 163.67 127.022 161.308L128.304 160.731C129.41 163.05 130.637 165.311 131.978 167.503C136.601 175.326 140.779 183.404 144.494 191.697C152.421 208.986 156.278 216.891 164.683 223.107C172.279 228.739 179.374 230.646 184.07 231.928L184.872 232.146C210.686 239.241 244.306 261.071 253.619 283.942C258.849 296.796 254.865 305.715 249.818 317.027C245.284 327.164 239.639 339.835 238.886 359.545C237.879 386.034 246.481 405.35 252.767 419.45C258.582 432.501 262.784 441.92 257.061 450.03L256.97 450.128C251.826 455.176 245.363 458.67 238.323 460.209C236.195 460.641 234.031 460.876 231.86 460.912C218.887 461.659 209.334 465.756 208.63 470.866C207.926 476.146 217.204 481.707 220.259 483.537C235.746 492.794 253.788 491.281 266.199 488.387C282.65 483.277 299.938 477.828 317.537 472.197C340.767 464.77 351.474 461.074 360.886 451.261C367.247 444.521 372.005 436.431 374.803 427.595L376.14 428.031C373.279 437.069 368.411 445.343 361.899 452.233C351.826 462.729 339.789 466.544 317.938 473.583C300.34 479.215 283.051 484.656 266.551 489.774C260.407 491.227 254.118 491.977 247.805 492.013Z" fill="#C3343D"/>
+                    <path d="M268.888 248.928C268.888 248.928 272.267 243.472 258.075 232.075L242.272 250.378C242.272 250.378 220.449 250.498 226.468 268.68C226.468 268.68 245.137 280.232 249.1 261.036L268.888 248.928Z" fill="#F2AB01"/>
+                    <path d="M267.642 93.0188L266.339 99.9385H266.248L264.382 99.5936C264.636 98.1857 264.826 95.8556 263.495 94.8772C262.962 94.564 262.354 94.399 261.736 94.399C261.117 94.399 260.509 94.564 259.976 94.8772C258.68 95.5811 258.117 96.989 257.786 98.3969L252.549 97.4325L252.232 97.3762V90.1819L266.705 92.8498L267.642 93.0188Z" fill="#7283AA"/>
+                    <path d="M100.681 138.184L95.1832 132.186L102.877 128.976L89.2841 125.752L89.2278 125.689L97.5695 110.934L85.6729 116.361L85.0042 108.175L80.2807 115.932L70.693 105.479L72.5585 121.789L59.6975 118.741L65.5402 125.541L57.1985 129.349L70.4748 132.045L61.929 146.075L74.7196 140.732L75.7333 149.559L79.8795 142.231L88.6154 152.403L87.2357 135.509L87.3272 135.466L100.681 138.184Z" fill="#D3B47D"/>
+                    <path d="M209.032 391.448C209.058 392.571 208.658 393.662 207.912 394.503C207.32 395 206.574 395.277 205.8 395.284C192.799 396.488 167.492 403.731 158.855 398.55L158.77 398.079L209.032 391.448Z" fill="#F2AB01"/>
+                    <path d="M300.656 391.286C300.607 391.985 300.462 392.674 300.227 393.334C298.411 398.374 291.928 399.979 287.458 401.077C284.283 401.859 275.568 404.006 271.971 399.67C272.597 400.296 291.167 397.002 300.656 391.286Z" fill="#F2AB01"/>
+                    </svg>
+                    
+           </figure>
+        </div>
+     </div>
+    </section>
+    <section class="agradecimiento">
+        <div class="ancho descripcion">
+            <p>Gracias por elegir a DIPOSME CC como tu proveedor de confianza en postes de luz de metal.
+                Estamos aquí para ayudarte a iluminar tu camino hacia un futuro brillante.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="ancho pie-pagina">
+            <div class="seccion-ubicacion">
+                <p>📍 Mérida, Yucatán</p>
+                <ul>
+                    <li><p>📅  Lun-Vie <span class="amarillo">de 08:00 h - 17:00 h</span></p></li>
+                    <li><p>Sab-Dom  <span class="amarillo">Cerrado</span></p></li>
+                </ul>
+            </div>
+            <div class="seccion-footer">
+                <figure class="logo"> <a href="#inicio"> <img src="imagenes/logo.webp" alt=""></a></figure>
+                <p class="copyright">Todos los derechos © 2024 DIPOSME</p>
+            </div>
+            <div class="seccion-footer">
+                <p>Siguenos en:</p>
+                <ul class="redes-sociales">
+                    <li><a href="https://www.facebook.com/diposmecc"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/diposmecc"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
